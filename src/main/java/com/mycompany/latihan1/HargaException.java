@@ -8,8 +8,9 @@ package com.mycompany.latihan1;
  *
  * @author User
  */
-public class InvalidPriceException extends Exception {
-    public InvalidPriceException(String message) {
+public class HargaException extends Exception {
+    public HargaException(String message) {
         super(message);
+        
     }
 }

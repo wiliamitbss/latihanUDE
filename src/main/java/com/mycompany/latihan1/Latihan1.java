@@ -20,27 +20,27 @@ public class Latihan1 {
 //            // Mencoba melakukan pembelian dengan harga jual <= 0
 //            barang1.beliBarang(1);  
 //
-//        } catch (InvalidPriceException | InvalidQuantityException e) {
+//        } catch (HargaException | KuantitasException e) {
 //            System.out.println("Error: " + e.getMessage());
 //        }
 //    }
         //Latihan 2
-//        String fileName = "C:\\Users\\ASUS\\Documents\\tugas.txt"; // Ganti dengan path file yang sesuai
-//        String fileContent = bacaFile(fileName);
-//
-//        if (fileContent != null) {
-//            System.out.println("Isi file ditemukan");
-//        } else {
-//            System.out.println("File tidak ditemukan atau terjadi kesalahan.");
-//        }
-        
-        //Latihan 3
-        String fileName = "C:\\Users\\ASUS\\Documents\\tugas.txtd";
-        bacaFile(fileName);
-        if (fileName == null) {
+        String fileName = "C:\\Users\\ASUS\\Documents\\tugas.txt"; // Ganti dengan path file yang sesuai
+        String fileContent = bacaFile(fileName);
+
+        if (fileContent != null) {
             System.out.println("Isi file ditemukan");
         } else {
             System.out.println("File tidak ditemukan atau terjadi kesalahan.");
         }
+        
+        //Latihan 3
+//        String fileName = "C:\\Users\\ASUS\\Documents\\tugas.txtd";
+//        bacaFile(fileName);
+//        if (fileName == null) {
+//            System.out.println("Isi file ditemukan");
+//        } else {
+//            System.out.println("File tidak ditemukan atau terjadi kesalahan.");
+//        }
     }
 }

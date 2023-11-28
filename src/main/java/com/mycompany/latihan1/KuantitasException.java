@@ -8,8 +8,8 @@ package com.mycompany.latihan1;
  *
  * @author User
  */
-public class InvalidQuantityException extends Exception {
-    public InvalidQuantityException(String message) {
+public class KuantitasException extends Exception {
+    public KuantitasException(String message) {
         super(message);
     }
 }

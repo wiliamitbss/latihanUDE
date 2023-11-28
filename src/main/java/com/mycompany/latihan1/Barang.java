@@ -23,9 +23,9 @@ public class Barang {
         this.hargaJual = hargaJual;
     }
     
-    public void beliBarang(int jumlah) throws InvalidPriceException, InvalidQuantityException {
+    public void beliBarang(int jumlah) throws HargaException, KuantitasException {
         if (hargaJual <= 0 || jumlah < 1) {
-            throw new InvalidPriceException("Harga jual barang tidak valid");
+            throw new HargaException("Harga jual barang tidak valid");
         }
 
         // Proses pembelian barang

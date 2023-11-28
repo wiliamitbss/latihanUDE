@@ -1,6 +1,6 @@
 com\mycompany\latihan1\Barang.class
 com\mycompany\latihan1\FileBaca2.class
 com\mycompany\latihan1\FileBaca.class
-com\mycompany\latihan1\InvalidPriceException.class
-com\mycompany\latihan1\InvalidQuantityException.class
+com\mycompany\latihan1\HargaException.class
+com\mycompany\latihan1\KuantitasException.class
 com\mycompany\latihan1\Latihan1.class
