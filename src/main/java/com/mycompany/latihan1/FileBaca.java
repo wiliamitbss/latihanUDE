@@ -22,7 +22,7 @@ public class FileBaca {
             return content.toString();
         } catch (IOException e) {
             System.err.println("Error reading file: " + e.getMessage());
-            return null; // File not found or other I/O error
+            return null;
         } finally {
             try {
                 if (reader != null) {
