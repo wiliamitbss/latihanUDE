@@ -4,33 +4,16 @@
  */
 package com.mycompany.latihan1;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.File;
+import java.io.FileNotFoundException;
 
-public class FileBaca {
+public class FileBaca{
+    public static String FileBaca(String fileName) throws FileNotFoundException {
+        File file = new File(fileName);
 
-    public static String bacaFile(String fileName) {
-        BufferedReader reader = null;
-        try {
-            reader = new BufferedReader(new FileReader(fileName));
-            StringBuilder content = new StringBuilder();
-            String line;
-            while ((line = reader.readLine()) != null) {
-                content.append(line).append("\n");
-            }
-            return content.toString();
-        } catch (IOException e) {
-            System.err.println("Error reading file: " + e.getMessage());
-            return null;
-        } finally {
-            try {
-                if (reader != null) {
-                    reader.close();
-                }
-            } catch (IOException e) {
-                System.err.println("Error closing reader: " + e.getMessage());
-            }
+        if (!file.exists()) {
+            throw new FileNotFoundException("File not found: " + fileName);
         }
+        return "";
     }
 }
