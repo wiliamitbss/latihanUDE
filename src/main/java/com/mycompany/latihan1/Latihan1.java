@@ -21,30 +21,35 @@ public class Latihan1 {
 
        
         //Latihan 2
-//        Scanner scanner = new Scanner(System.in);
-//
-//        System.out.print("Masukkan nama file: ");
-//        String fileName = scanner.nextLine();
-//
-//        try {
-//            String data = FileBaca.FileBaca(fileName);
-//            System.out.println("File ditemukan.");
-//        } catch (FileNotFoundException e) {
-//            System.out.println("Error: " + e.getMessage());
-//        } finally {
-//            scanner.close();
-//        }
-//    }
-//}
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan nama file: ");
+        String fileName = scanner.nextLine();
+
+        try {
+            String data = FileBaca.FileBaca(fileName);
+            System.out.println("File ditemukan.");
+        } catch (FileNotFoundException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
         
         //Latihan 3
-//        String fileName = "C:\\Users\\ASUS\\Documents\\tugas.txtd";
-//        bacaFile(fileName);
-//        if (fileName == null) {
-//            System.out.println("Isi file ditemukan");
-//        } else {
-//            System.out.println("File tidak ditemukan atau terjadi kesalahan.");
-//        }
+        Scanner scanner1 = new Scanner(System.in);
+
+        System.out.print("Masukkan nama file: ");
+        String fileName1 = scanner1.nextLine();
+
+        try {
+            String data1 = FileBaca.FileBaca(fileName1);
+            System.out.println("File ditemukan.");
+        } catch (FileNotFoundException e) {
+            System.out.println("Error: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Error: Terjadi kesalahan saat membaca file.");
+            e.printStackTrace();
+        } finally {
+            scanner1.close();
+        }
    
     }
 }
